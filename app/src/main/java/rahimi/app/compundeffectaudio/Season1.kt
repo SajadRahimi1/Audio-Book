@@ -16,35 +16,35 @@ class Season1 : AppCompatActivity() {
         when(view.id){
             R.id.s1_1 -> {
                 intent.putExtra("title", "s1_1")
-                finish()
+
             }
             R.id.s1_2 -> {
                 intent.putExtra("title", "s1_2")
-                finish()
+
             }
             R.id.s1_3 -> {
                 intent.putExtra("title", "s1_3")
-                finish()
+
             }
             R.id.s1_4 -> {
                 intent.putExtra("title", "s1_4")
-                finish()
+
             }
             R.id.s1_5 -> {
                 intent.putExtra("title", "s1_5")
-                finish()
+
             }
             R.id.s1_6 -> {
                 intent.putExtra("title", "s1_6")
-                finish()
+
             }
             R.id.s1_7 -> {
                 intent.putExtra("title", "s1_7")
-                finish()
+
             }
             R.id.s1_8 -> {
                 intent.putExtra("title", "s1_8")
-                finish()
+
             }
         }
 
