@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundMain"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/IntroCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/root1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CDC1C1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtItem1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="مقدمه"
+                            android:textColor="@color/black"
+                            android:textSize="35sp" />
+
+                        <ImageView
+                            android:id="@+id/imgItem1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.7"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/intro" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Season1Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/root2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CDC1C1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtItem2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="فصل ۱"
+                            android:textColor="@color/black"
+                            android:textSize="35sp" />
+
+                        <ImageView
+                            android:id="@+id/imgItem2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.7"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/season1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Season2Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/root3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CDC1C1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtItem3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="فصل ۲"
+                            android:textColor="@color/black"
+                            android:textSize="35sp" />
+
+                        <ImageView
+                            android:id="@+id/imgItem3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.7"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/season2" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#CDC1C1"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</LinearLayout>

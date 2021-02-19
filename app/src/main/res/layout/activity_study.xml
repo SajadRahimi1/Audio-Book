@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".Study">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            tools:ignore="NestedWeights">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnExit"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.95"
+
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/exit" />
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingEnd="15dp"
+                        android:text="@string/textview"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgStudy"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="30dp"
+                    android:layout_weight="1"
+
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/intro" />
+
+                <TextView
+                    android:id="@+id/txtDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ellipsize="end"
+
+                    android:fontFamily="@font/iransans"
+                    android:gravity="center"
+
+                    android:text="@string/textview"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBarStudy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:progress="50" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/play"
+                    tools:ignore="NestedWeights" />
+
+                <ImageButton
+                    android:id="@+id/btnPause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/pause" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
